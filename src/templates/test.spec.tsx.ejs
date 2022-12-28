@@ -1,0 +1,9 @@
+import { render } from '@testing-libary/react';
+import '@testing-library/jest-dom';
+
+describe('<%= props.name %>', () => {
+  it('should render successfully', () => {
+    const { baseElement } = render(<<%= props.name %> />);
+    expect(baseElement).toBeTruthy();
+  })
+})
